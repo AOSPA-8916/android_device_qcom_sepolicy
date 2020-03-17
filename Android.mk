@@ -5,7 +5,7 @@ endif
 
 # Use QCOM Legacy SEPolicy by default for legacy pre-UM boards
 ifeq ($(call is-board-platform-in-list, apq8084 msm8226 msm8909 msm8916 msm8952 msm8960 msm8974 msm8976 msm8992 msm8994),true)
-  TARGET_USES_QCOM_LEGACY_SEPOLICY ?= true
+  TARGET_USES_QCOM_LEGACY_NON_UM_SEPOLICY ?= true
 endif
 
 # Board specific SELinux policy variable definitions
